@@ -15,8 +15,6 @@ import google.generativeai as genai
 ##Configure Google API key
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-## Function to load Gemini-Pro-Vision model and get responses
-## We'll use 'gemini-pro-vision' for multimodal capabilities (text & image)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 def get_gemini_response(input_text, image_data):
