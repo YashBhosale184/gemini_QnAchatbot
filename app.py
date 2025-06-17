@@ -14,8 +14,8 @@ import google.generativeai as genai
 
 ##Configure Google API key
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-
-model = genai.GenerativeModel('gemini-1.5-flash')
+## Function to load gemini-2.0-flash model and get responses
+model = genai.GenerativeModel('gemini-2.0-flash')
 
 def get_gemini_response(input_text, image_data):
     if input_text and image_data:
